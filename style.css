@@ -6,17 +6,23 @@
     font-style: normal;
 }
 
+
+
 .hind-madurai-semibold {
     font-family: "Hind Madurai", sans-serif;
     font-weight: 600;
     font-style: normal;
 }
 
+
+
 .hind-madurai-bold {
     font-family: "Hind Madurai", sans-serif;
     font-weight: 700;
     font-style: normal;
 }
+
+
 
 .inter-semibold {
     font-family: "Inter", sans-serif;
@@ -25,6 +31,8 @@
     font-style: normal;
 }
 
+
+
 .inter-bold {
     font-family: "Inter", sans-serif;
     font-optical-sizing: auto;
@@ -32,12 +40,16 @@
     font-style: normal;
 }
 
+
+
 .inter-black {
     font-family: "Inter", sans-serif;
     font-optical-sizing: auto;
     font-weight: 900;
     font-style: normal;
 }
+
+
 
 .roboto-regular {
     font-family: "Roboto", sans-serif;
@@ -47,6 +59,8 @@
     font-variation-settings: "wdth" 100;
 }
 
+
+
 .roboto-medium {
     font-family: "Roboto", sans-serif;
     font-optical-sizing: auto;
@@ -55,6 +69,8 @@
     font-variation-settings: "wdth" 100;
 }
 
+
+
 .roboto-bold {
     font-family: "Roboto", sans-serif;
     font-optical-sizing: auto;
@@ -62,6 +78,8 @@
     font-style: normal;
     font-variation-settings: "wdth" 100;
 }
+
+
 
 #banner {
     background: linear-gradient(

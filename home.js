@@ -23,7 +23,7 @@ function callFeature() {
                 coins -= 20;
                 coinCount.innerText = coins;
 
-                alert(`📞 Calling ${helplineService} (${helplineNumber})...`);
+                alert(` Calling ${helplineService} (${helplineNumber})...`);
 
                 callHistoryWrapper.innerHTML += `
                     <div class="single-call-history flex gap-4 justify-between items-center bg-[#fafafa] rounded-lg p-4 mb-2">
@@ -35,11 +35,13 @@ function callFeature() {
                     </div>
                 `;
             } else {
-                alert("❌ You don't have enough coins to make a call. At least 20 coins are needed.");
+                alert(" You don't have enough coins to make a call. At least 20 coins are needed.");
             }
         });
     }
 }
+
+
 
 // Count bookmark
 function getHeartCount() {
@@ -50,14 +52,16 @@ function getHeartCount() {
     }
 }
 
-// Count copy counter button & helpline line copied to clipboard
+
+
+
 function getCopiedCount() {
     for (const copyBtn of copyBtns) {
         copyBtn.addEventListener('click', function() {
-            // Increase copy counter button by 1
+           
             copyCount.innerText = parseInt(copyCount.innerText) + 1;
 
-            // Add helpline number to clipboard
+            
             const helplineNumber = copyBtn.parentNode.parentNode.querySelector('.helpline-number').innerText;
             copyHotlineToClipboard(helplineNumber);
 
@@ -65,6 +69,8 @@ function getCopiedCount() {
         });
     }
 }
+
+
 
 // Handle clipboard copy
 function copyHotlineToClipboard(text) {
@@ -77,6 +83,8 @@ function copyHotlineToClipboard(text) {
 historyClearBtn.addEventListener('click', function() {
     callHistoryWrapper.innerHTML = '';
 });
+
+
 
 // Function invoked
 callFeature();
